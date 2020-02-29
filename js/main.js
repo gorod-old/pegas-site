@@ -7,6 +7,13 @@ $(document).ready(function(){
         scrollTop: jQuery('#nav-bar').offset().top - paddingtop}, scrollspeed);
     });
 
+    jQuery('#scroll-bt-1').click(function() {
+        jQuery('html').animate({
+        scrollTop: jQuery('#scroll-bt-1').offset().top - jQuery('#scroll-bt-1').outerHeight() + 80 }, scrollspeed);
+    });
+
+    
+
     $('a.animated').hover( 
     function() {
         $(this).addClass('pulse'); // Добавляем класс анимации
@@ -16,5 +23,3 @@ $(document).ready(function(){
     });
 
 });
-
-
