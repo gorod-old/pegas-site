@@ -32,6 +32,11 @@ $(document).ready(function(){
         scrollTop: jQuery('#block-5').outerHeight() + jQuery('#block-5').offset().top - 50 }, scrollspeed);
     });
 
+    jQuery('#scroll-bt-6').click(function() {
+        jQuery('html').animate({
+        scrollTop: jQuery('#block-6').outerHeight() + jQuery('#block-6').offset().top - 50 }, scrollspeed);
+    });
+
     
     $('#block-5').magnificPopup({
         delegate: '.pop-up-img', // child items selector, by clicking on it popup will open
