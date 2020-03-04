@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var paddingtop = 0; // отступ сверху при прокрутке
-    var scrollspeed = 500; // время прокрутки
+    var scrollspeed = 650; // время прокрутки
     
     jQuery('#scroll-bt').click(function() {
         jQuery('html').animate({
@@ -27,7 +27,21 @@ $(document).ready(function(){
         scrollTop: jQuery('#block-4').outerHeight() + jQuery('#block-4').offset().top - 50 }, scrollspeed);
     });
 
+    jQuery('#scroll-bt-5').click(function() {
+        jQuery('html').animate({
+        scrollTop: jQuery('#block-5').outerHeight() + jQuery('#block-5').offset().top - 50 }, scrollspeed);
+    });
+
     
+    $('#block-5').magnificPopup({
+        delegate: '.pop-up-img', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery:{
+            enabled:true
+        }
+        // other options
+      });
+
 
     $('a.animated').hover( 
     function() {
